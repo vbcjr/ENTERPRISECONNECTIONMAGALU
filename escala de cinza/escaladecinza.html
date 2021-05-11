@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="shortcut icon" type"image/png" href="./img/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Traveller</title>
+</head>
+
+<body>
+    <div class="box_acessibilidade">
+        <div class="acessibilidade">Acessibilidade</div>
+        <div class="box_item">
+            <div class="box_acao"><img src="./img/icones/Escala Cinza.png" class="icone_acessibilidade"></div>
+            <div class="disclaimer"><a href="./escaladecinza.html" target="_blank">Escala de cinza</a></div>
+        </div>
+        <div class="box_item">
+            <div class="box_acao"><img src="./img/icones/Contraste.png" class="icone_acessibilidade"></div>
+            <div class="disclaimer"><a href="../contraste/index.html" target="_blank">Contraste</a></div>
+        </div>
+        <div class="box_item">
+            <div class="box_acao"><img src="./img/icones/Negrito.png" class="icone_acessibilidade"></div>
+            <div class="disclaimer"><a href="../negrito/index.html" target="_blank">Fonte em Negrito</a></div>
+        </div>
+        <nav class="audio">
+            <audio id="player" controls="controls">
+                <source src="./audio/projetotraveller_mixagem.mp3" type="audio/mp3" />
+                seu navegador não suporta HTML5
+            </audio>
+        </nav>
+        <!-- <div class="box_item">
+            <div class="box_acao"><img src="./img/icones/Play.png" class="icone_acessibilidade"></div>
+            <div class="disclaimer">Autodescrição</div>
+        </div> -->
+    </div>
+    <section class="container banner">
+        <header class="header">
+            <nav class="header__logo">
+                <img src="./img/logo-reduzido.png" alt="" srcset="">
+            </nav>
+            <nav class="header__icons">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </nav>
+            <nav class="header__menu">
+                <ul class="links__menu">
+                    <li><a href="#" class="header__menu__item">Compras</a></li>
+                    <li><a href="#" class="header__menu__item">Hoteis</a></li>
+                    <li><a href="#" class="header__menu__item">Gastronomia</a></li>
+                    <li><a href="#" class="header__menu__item">Eventos</a></li>
+                    <li><a href="#" class="header__menu__item">Lazer</a></li>
+
+                </ul>
+                <div class="hamburguer">
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                </div>
+        </header>
+    </section>
+    <section class="container pesquisar">
+        <h2>Encontre seu hotel</h2>
+        <nav class="base">
+            <nav class="tipo">
+                <form action="" method="POST" id="" class="tipo_de_viagem">
+                    <select name="" id="tipo_de_viagem">
+                        <option value="0" disabled selected>Tipo de Viagem</option>
+                        <option value="1">Descanso</option>
+                        <option value="2">Trabalho</option>
+                    </select>
+            </nav>
+            <nav class="buscar">
+                <form action="" method="POST" id="" class="buscar_hoteis">
+                    <input type="search" id="buscar_hoteis" placeholder="Ex: Hotel Blue Tree Paulista" autofocus>
+                </form>
+            </nav>
+
+            <nav class="datas">
+                <form form action="" method="POST" id="" name="dados">
+                    <input type="date" id="data" placeholder="Check-in">
+                </form>
+                <form form action="" method="POST" id="" name="dados">
+                    <input type="date" id="data" placeholder="Check-in">
+                </form>
+            </nav>
+            <nav class="datas">
+
+            </nav>
+            <nav class="botao">
+                <h3>Buscar</h3>
+            </nav>
+        </nav>
+    </section>
+
+    <section class="corpo">
+        <div class="cx_principal">
+            <div class="cx_fotohotel"><img id="fotodohotel" src="./img/hotel_blue.jpg" alt="Foto do Hotel">
+            </div>
+            <div class="cx_informacoes">
+                <div class="bx_hotel"><i class="fas fa-hotel"></i>Blue Tree Premium Paulista</div>
+                <div class="bx_descricao">Hotel simples com quartos arejados e café da manhã gratuito, além de
+                    restaurante e
+                    piscina coberta.</div>
+                <!-- AVALIAÇÃO  -->
+                <div class="bx_avaliacao">
+                    <div id="tagopcao"><i class="icon far fa-thumbs-up"></i>Turismo</div>
+                    <div id="tagestrela">
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star estrela_cinza"></i>
+                        <i class="icon fas fa-star estrela_cinza"></i>
+                    </div>
+                    <a id="tagavalie" href="#"><i class="icon icon fas fa-tasks"></i>Avaliar este Hotel</a>
+
+                </div>
+                <!-- VALOR E INFORMAÇÕES (KM E TEMPO) -->
+                <div class="bx_valor">
+                    <div id="vl_diaria"><i class="icon fas fa-money-bill-wave"></i>R$ 290</div>
+                    <div id="vl_km"><i class="icon fas fa-car"></i>1,1 Km</div>
+                    <div id="vl_tempo"><i class="icon far fa-clock"></i>4 min</div>
+                    <div id="vl_local">Av. Paulista (M.A.S.P.)</div>
+                </div>
+                <div class="bx_acesso">
+                    <a id="lk_site" href="https://www.bluetree.com.br/hotel/blue-tree-premium-paulista/"><i
+                            class="icon fas fa-globe"></i>Site</a>
+                    <a id="lk_rota" href="https://goo.gl/maps/gcnTPe36rEGVnNJm8"><i
+                            class="icon fas fa-route"></i>Rotas</a>
+                </div>
+            </div>
+            <div class="cx_iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.240509548484!2d-46.65888598527639!3d-23.559804034683655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cc06495c71%3A0xcc0f48b9437fc214!2sBlue%20Tree%20Premium%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1619454815958!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+        </div>
+
+        <div class="cx_principal">
+            <div class="cx_fotohotel"><img id="fotodohotel" src="./img/hotel_mercure.jpg" alt="Foto do Hotel">
+            </div>
+            <div class="cx_informacoes">
+                <div class="bx_hotel"><i class="fas fa-hotel"></i>Mercure São Paulo Pamplona</div>
+                <div class="bx_descricao">Hotel refinado com restaurante casual, piscina na cobertura, sauna e sala de
+                    ginástica.</div>
+                <!-- AVALIAÇÃO  -->
+                <div class="bx_avaliacao">
+                    <div id="tagopcao"><i class="icon far fa-thumbs-up"></i>Turismo</div>
+                    <div id="tagestrela">
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star estrela_cinza"></i>
+                    </div>
+                    <a id="tagavalie" href="#"><i class="icon icon fas fa-tasks"></i>Avaliar este Hotel</a>
+
+                </div>
+                <!-- VALOR E INFORMAÇÕES (KM E TEMPO) -->
+                <div class="bx_valor">
+                    <div id="vl_diaria"><i class="icon fas fa-money-bill-wave"></i>R$ 230</div>
+                    <div id="vl_km"><i class="icon fas fa-car"></i>1,3 Km</div>
+                    <div id="vl_tempo"><i class="icon far fa-clock"></i>6 min</div>
+                    <div id="vl_local">Av. Paulista (M.A.S.P.)</div>
+                </div>
+                <div class="bx_acesso">
+                    <a id="lk_site" href="https://all.accor.com/hotel/6284/index.pt-br.shtml"><i
+                            class="icon fas fa-globe"></i>Site</a>
+                    <a id="lk_rota" href="https://goo.gl/maps/pNTaXtq6ecyU7DLC9"><i
+                            class="icon fas fa-route"></i>Rotas</a>
+                </div>
+            </div>
+            <div class="cx_iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.997658331254!2d-46.66033128502209!3d-23.5685275846794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c454ef9fcd%3A0xb8a3a403a40e5c4!2sMercure%20Sao%20Paulo%20Pamplona%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1619450776795!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+        </div>
+
+
+
+        <div class="cx_principal">
+            <div class="cx_fotohotel"><img id="fotodohotel" src="./img/hotel_renaissance.jpg" alt="Foto do Hotel">
+            </div>
+            <div class="cx_informacoes">
+                <div class="bx_hotel"><i class="fas fa-hotel"></i>Renaissance São Paulo Hote</div>
+                <div class="bx_descricao">Quartos aconchegantes em um hotel refinado com piscina externa, spa,
+                    restaurante
+                    chique e sushi bar.</div>
+                <!-- AVALIAÇÃO  -->
+                <div class="bx_avaliacao">
+                    <div id="tagopcao"><i class="icon far fa-thumbs-up"></i>Negócios</div>
+                    <div id="tagestrela">
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                    </div>
+                    <a id="tagavalie" href="#"><i class="icon icon fas fa-tasks"></i>Avaliar este Hotel</a>
+
+                </div>
+                <!-- VALOR E INFORMAÇÕES (KM E TEMPO) -->
+                <div class="bx_valor">
+                    <div id="vl_diaria"><i class="icon fas fa-money-bill-wave"></i>R$ 1070</div>
+                    <div id="vl_km"><i class="icon fas fa-car"></i>1,4 Km</div>
+                    <div id="vl_tempo"><i class="icon far fa-clock"></i>8 min</div>
+                    <div id="vl_local">Av. Paulista (M.A.S.P.)</div>
+                </div>
+                <div class="bx_acesso">
+                    <a id="lk_site" href="https://www.marriott.com/hotels/travel/saobr-renaissance-sao-paulo-hotel/"><i
+                            class="icon fas fa-globe"></i>Site</a>
+                    <a id="lk_rota" href="https://goo.gl/maps/AssHau9EADDJqyrq6"><i
+                            class="icon fas fa-route"></i>Rotas</a>
+                </div>
+            </div>
+            <div class="cx_iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7314.635451245666!2d-46.666167225994215!3d-23.55702968874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c89e6dca17%3A0xb62609d26a3a7180!2sRenaissance%20S%C3%A3o%20Paulo%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1619455888708!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+        </div>
+
+
+
+        <div class="cx_principal">
+            <div class="cx_fotohotel"><img id="fotodohotel" src="./img/hotel_tulip.jpg" alt="Foto do Hotel">
+            </div>
+            <div class="cx_informacoes">
+                <div class="bx_hotel"><i class="fas fa-hotel"></i>Golden Tulip Paulista Plaza</div>
+                <div class="bx_descricao">Quartos simples em hotel com duas piscinas externas, um restaurante asiático e
+                    nove salas de eventos.</div>
+                <!-- AVALIAÇÃO  -->
+                <div class="bx_avaliacao">
+                    <div id="tagopcao"><i class="icon far fa-thumbs-up"></i>Trabalho</div>
+                    <div id="tagestrela">
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star estrela_cinza"></i>
+                    </div>
+                    <a id="tagavalie" href="#"><i class="icon icon fas fa-tasks"></i>Avaliar este Hotel</a>
+                </div>
+                <!-- VALOR E INFORMAÇÕES (KM E TEMPO) -->
+                <div class="bx_valor">
+                    <div id="vl_diaria"><i class="icon fas fa-money-bill-wave"></i>R$ 349</div>
+                    <div id="vl_km"><i class="icon fas fa-car"></i>1,9 Km</div>
+                    <div id="vl_tempo"><i class="icon far fa-clock"></i>7 min</div>
+                    <div id="vl_local">Av. Paulista (M.A.S.P.)</div>
+                </div>
+                <div class="bx_acesso">
+                    <a id="lk_site"
+                        href="https://www.radissonhotelsamericas.com/en-us/hotels/radisson-sao-paulo-paulista"><i
+                            class="icon fas fa-globe"></i>Site</a>
+                    <a id="lk_rota" href="https://goo.gl/maps/BBV3q9TZsg7JP5DW9"><i
+                            class="icon fas fa-route"></i>Rotas</a>
+                </div>
+            </div>
+            <div class="cx_iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7314.115522496569!2d-46.656212475993556!3d-23.566368888721467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5996048af781%3A0x9856d09e924a4d99!2sRadisson%20Hotel%20Paulista%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1619455323804!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+        </div>
+
+
+
+        <div class="cx_principal">
+            <div class="cx_fotohotel"><img id="fotodohotel" src="./img/hotel_htc.jpg" alt="Foto do Hotel">
+            </div>
+            <div class="cx_informacoes">
+                <div class="bx_hotel"><i class="fas fa-hotel"></i>Sheraton São Paulo WTC Hotel</div>
+                <div class="bx_descricao">Quartos e suítes de luxo em um edifício sofisticado com club lounge, heliponto
+                    e
+                    restaurante refinado.</div>
+                <!-- AVALIAÇÃO  -->
+                <div class="bx_avaliacao">
+                    <div id="tagopcao"><i class="icon far fa-thumbs-up"></i>Negócios</div>
+                    <div id="tagestrela">
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                    </div>
+                    <a id="tagavalie" href="#"><i class="icon icon fas fa-tasks"></i>Avaliar este Hotel</a>
+                </div>
+                <!-- VALOR E INFORMAÇÕES (KM E TEMPO) -->
+                <div class="bx_valor">
+                    <div id="vl_diaria"><i class="icon fas fa-money-bill-wave"></i>R$ 372</div>
+                    <div id="vl_km"><i class="icon fas fa-car"></i>13,4 Km</div>
+                    <div id="vl_tempo"><i class="icon far fa-clock"></i>22 min</div>
+                    <div id="vl_local">Av. Paulista (M.A.S.P.)</div>
+                </div>
+                <div class="bx_acesso">
+                    <a id="lk_site" href="https://www.marriott.com/hotels/travel/saosi-sheraton-sao-paulo-wtc-hotel/"><i
+                            class="icon fas fa-globe"></i>Site</a>
+                    <a id="lk_rota" href="https://goo.gl/maps/sFZ7qxpbKauMJyA86"><i
+                            class="icon fas fa-route"></i>Rotas</a>
+                </div>
+            </div>
+            <div class="cx_iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58503.47043961215!2d-46.71452211819508!3d-23.587582475339918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50c39b566d85%3A0xdef17ec1a62a235d!2sSheraton%20S%C3%A3o%20Paulo%20WTC%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1619453117931!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+        </div>
+
+
+
+        <div class="cx_principal">
+            <div class="cx_fotohotel"><img id="fotodohotel" src="./img/hotel_comfort.jpg" alt="Foto do Hotel">
+            </div>
+            <div class="cx_informacoes">
+                <div class="bx_hotel"><i class="fas fa-hotel"></i>Comfort Ibirapuera</div>
+                <div class="bx_descricao">Hospedaria descontraída que oferece um restaurante internacional e um bar,
+                    além de
+                    academia e piscina externa.</div>
+                <!-- AVALIAÇÃO  -->
+                <div class="bx_avaliacao">
+                    <div id="tagopcao"><i class="icon far fa-thumbs-up"></i>Trabalho</div>
+                    <div id="tagestrela">
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                    </div>
+                    <a id="tagavalie" href="#"><i class="icon icon fas fa-tasks"></i>Avaliar este Hotel</a>
+                </div>
+                <!-- VALOR E INFORMAÇÕES (KM E TEMPO) -->
+                <div class="bx_valor">
+                    <div id="vl_diaria"><i class="icon fas fa-money-bill-wave"></i>R$ 169</div>
+                    <div id="vl_km"><i class="icon fas fa-car"></i>6,4 Km</div>
+                    <div id="vl_tempo"><i class="icon far fa-clock"></i>18 min</div>
+                    <div id="vl_local">Av. Paulista (M.A.S.P.)</div>
+                </div>
+                <div class="bx_acesso">
+                    <a id="lk_site" href="https://www.atlanticahotels.com.br/hotel/comfort-ibirapuera/"><i
+                            class="icon fas fa-globe"></i>Site</a>
+                    <a id="lk_rota" href="https://goo.gl/maps/kaZcCjVmKrxPPCNN9"><i
+                            class="icon fas fa-route"></i>Rotas</a>
+                </div>
+            </div>
+            <div class="cx_iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.039073543145!2d-46.664227585275455!3d-23.60293158466232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b7cd6d9fdd1%3A0xacb77be622beb2dc!2sAtlantica%20Hotels%20International%20LTDA!5e0!3m2!1spt-BR!2sbr!4v1619447084402!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+        </div>
+
+        <div class="cx_principal">
+            <div class="cx_fotohotel"><img id="fotodohotel" src="./img/hotel_ibis.jpg" alt="Foto do Hotel">
+            </div>
+            <div class="cx_informacoes">
+                <div class="bx_hotel"><i class="fas fa-hotel"></i>IBIS Styles São Paulo Anhembi</div>
+                <div class="bx_descricao">Quartos coloridos em um hotel elegante com temática de aviação, bar 24 horas e
+                    Wi-Fi gratuito.</div>
+                <!-- AVALIAÇÃO  -->
+                <div class="bx_avaliacao">
+                    <div id="tagopcao"><i class="icon far fa-thumbs-up"></i>Turismo</div>
+                    <div id="tagestrela">
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star estrela_cinza"></i>
+                    </div>
+                    <a id="tagavalie" href="#"><i class="icon icon fas fa-tasks"></i>Avaliar este Hotel</a>
+                </div>
+                <!-- VALOR E INFORMAÇÕES (KM E TEMPO) -->
+                <div class="bx_valor">
+                    <div id="vl_diaria"><i class="icon fas fa-money-bill-wave"></i>R$ 160</div>
+                    <div id="vl_km"><i class="icon fas fa-car"></i>7,5 Km</div>
+                    <div id="vl_tempo"><i class="icon far fa-clock"></i>14 min</div>
+                    <div id="vl_local">Av. Paulista (M.A.S.P.)</div>
+                </div>
+                <div class="bx_acesso">
+                    <a id="lk_site" href="https://all.accor.com/hotel/9596/index.pt-br.shtml">
+                        <iclass="icon fas fa-globe">
+                            </iclass=>Site
+                    </a>
+                    <a id="lk_rota" href="https://goo.gl/maps/kaZcCjVmKrxPPCNN9"><i
+                            class="icon fas fa-route"></i>Rotas</a>
+                </div>
+            </div>
+            <div class="cx_iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.465835857112!2d-46.6278371850229!3d-23.515742084705575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58859029337b%3A0x1128b91971707df1!2sibis%20Styles%20S%C3%A3o%20Paulo%20Anhembi!5e0!3m2!1spt-BR!2sbr!4v1619446152217!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+        </div>
+
+        <div class="cx_principal">
+            <div class="cx_fotohotel"><img id="fotodohotel" src="./img/hotel_bourbon.jpg" alt="Foto do Hotel">
+            </div>
+            <div class="cx_informacoes">
+                <div class="bx_hotel"><i class="fas fa-hotel"></i>Bourbon Convention Ibirapuera</div>
+                <div class="bx_descricao">Acomodação moderna com restaurante e bar, além de piscina coberta e centro de
+                    convenções.</div>
+                <!-- AVALIAÇÃO  -->
+                <div class="bx_avaliacao">
+                    <div id="tagopcao"><i class="icon far fa-thumbs-up"></i>Negócios</div>
+                    <div id="tagestrela">
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                    </div>
+                    <a id="tagavalie" href="#"><i class="icon icon fas fa-tasks"></i>Avaliar este Hotel</a>
+                </div>
+                <!-- VALOR E INFORMAÇÕES (KM E TEMPO) -->
+                <div class="bx_valor">
+                    <div id="vl_diaria"><i class="icon fas fa-money-bill-wave"></i>R$ 161</div>
+                    <div id="vl_km"><i class="icon fas fa-car"></i>8,8 Km</div>
+                    <div id="vl_tempo"><i class="icon far fa-clock"></i>21 min</div>
+                    <div id="vl_local">Av. Paulista (M.A.S.P.)</div>
+                </div>
+                <div class="bx_acesso">
+                    <a id="lk_site" href="https://www.bourbon.com.br/hotel/bourbon-convention-ibirapuera-hotel/">
+                        <iclass="icon fas fa-globe">
+                            </iclass=>Site
+                    </a>
+                    <a id="lk_rota" href="https://goo.gl/maps/CWRGSFphpzGfP4rE6"><i
+                            class="icon fas fa-route"></i>Rotas</a>
+                </div>
+            </div>
+            <div class="cx_iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58503.836196258024!2d-46.6916145681995!3d-23.586762075444085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a08c3b44cb7%3A0x988947deddbd766!2sBourbon%20Convention%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1619454551278!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+        </div>
+
+        <div class="cx_principal">
+            <div class="cx_fotohotel"><img id="fotodohotel" src="./img/hotel_blue.jpg" alt="Foto do Hotel">
+            </div>
+            <div class="cx_informacoes">
+                <div class="bx_hotel"><i class="fas fa-hotel"></i>Blue Tree Premium Morumbi</div>
+                <div class="bx_descricao">Acomodações modernas em um hotel sofisticado com restaurante casual e spa,
+                    além de
+                    piscinas coberta e externa.</div>
+                <!-- AVALIAÇÃO  -->
+                <div class="bx_avaliacao">
+                    <div id="tagopcao"><i class="icon far fa-thumbs-up"></i>Trabalho</div>
+                    <div id="tagestrela">
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star"></i>
+                        <i class="icon fas fa-star estrela_cinza"></i>
+                    </div>
+                    <a id="tagavalie" href="#"><i class="icon icon fas fa-tasks"></i>Avaliar este Hotel</a>
+                </div>
+                <!-- VALOR E INFORMAÇÕES (KM E TEMPO) -->
+                <div class="bx_valor">
+                    <div id="vl_diaria"><i class="icon fas fa-money-bill-wave"></i>R$ 193</div>
+                    <div id="vl_km"><i class="icon fas fa-car"></i>9,7 Km</div>
+                    <div id="vl_tempo"><i class="icon far fa-clock"></i>27 min</div>
+                    <div id="vl_local">Av. Paulista (M.A.S.P.)</div>
+                </div>
+                <div class="bx_acesso">
+                    <a id="lk_site" href="https://www.bluetree.com.br/hotel/blue-tree-premium-morumbi/">
+                        <iclass="icon fas fa-globe">
+                            </iclass=>Site
+                    </a>
+                    <a id="lk_rota" href="https://goo.gl/maps/vbHxNceoCe2vRmDr9"><i
+                            class="icon fas fa-route"></i>Rotas</a>
+                </div>
+            </div>
+            <div class="cx_iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.4821755847215!2d-46.698668185021106!3d-23.62289718465239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50c383442dfb%3A0xdd07ed725d00a38e!2sBlue%20Tree%20Premium%20Morumbi!5e0!3m2!1spt-BR!2sbr!4v1619450448502!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+    </section>
+
+
+
+
+
+    <footer class="rodape">
+        <nav class="midias">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram-square"></i></a>
+        </nav>
+        <p>
+            Direitos reservados - Projeto Traveller
+        </p>
+    </footer>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
